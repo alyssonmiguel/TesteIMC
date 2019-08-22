@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calculo IMC</string>
+    <string name = "btnAltura">Digite sua Altura</string>
+    <string name = "btnPeso"> Digite seu Peso </string>
+    <string name = "btnCalcula"> Calcula</string>
+    <string name = "TextViewResultado"></string>
+</resources>
