@@ -39,27 +39,27 @@ public class MainActivity extends AppCompatActivity {
         Double resultado = num2 / (num1 * num1);
         String resultadoText = resultado.toString().replace(".", ",");
 
-        DecimalFormat df = new DecimalFormat("#.##");
+        DecimalFormat df = new DecimalFormat("#.#####");
         String resultFormatter = df.format(resultado).replace(".", ",");
 
         textViewResult.setText(resultadoText);
 
-        if (resultado < 18.5) {
+        if (resultado < 18.55) {
             textViewResult.setText(resultFormatter + "   - Magreza");
         } else {
-            if (resultado >= 18.5 && resultado <= 24.9) {
+            if (resultado >= 18.55 && resultado <= 24.99) {
                 textViewResult.setText(resultFormatter + "  - Saudável");
             } else {
-                if (resultado >= 25.0 && resultado <= 29.9) {
+                if (resultado >= 25.00 && resultado <= 29.99) {
                     textViewResult.setText(resultFormatter + "  - Sobrepeso");
                 } else {
-                    if (resultado >= 30.0 && resultado <= 34.9) {
+                    if (resultado >= 30.00 && resultado <= 34.99) {
                         textViewResult.setText(resultFormatter + "  - Obesidade Grau 1");
                     } else {
-                        if (resultado >= 35.0 && resultado <= 39.9) {
+                        if (resultado >= 35.00 && resultado <= 39.99) {
                             textViewResult.setText(resultFormatter + "  - Obesidade Grau 2");
                         } else {
-                            if (resultado > 40.0) {
+                            if (resultado > 40.00) {
                                 textViewResult.setText(resultFormatter + "  - Obesidade Grau 3");
                             }
 
